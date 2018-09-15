@@ -13,41 +13,57 @@ body {
 /* Настройка Блоков */
 div.header {
     background-color: rgba(0, 0, 0, 0.8);
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+div.footer {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 5px 5px;
+    padding: 5px 5px;
+    position: relative;
+    bottom: 0;
+    height: 200px;
+    float: right;
 }
 
 div.menu {
-    width: 300px;
+    width: 20%;
+    height: 100%;
     float: left;
     margin: 5px;
     background-color: rgba(0, 0, 0, 0.8);
+
 }
 div.content {
-    width: 870px;
-    float: right;
+    width: 75%;
+    height: 100%;
     margin: 5px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 5px;
     text-align: justify;
+    float: right;
 }
 
 div.mid {
     margin: 0 auto;
-    width: 1200px;
-    color:white;
-    
+    width: 80%; /*Возможно, это ошибка, ведь в задании было 1200 пикселей,
+        но я столкнулся с некоторыми проблемами при этом. Поэтому я выбрал проценты от размера окна*/
+    color: white;
+    min-width: 900px;
+
+
 }
 
 /* Настройка ссылок меню */
 a {
     font-size: 20pt;
+    text-decoration: none;
+    color: #ffd800;
 }
 a.Passive {
     pointer-events: none; 
     color: #888; 
-}
-a.Active {
-    
-    color: #ffd800;
 }
 a.Active:hover {
     font-size: 25pt;
@@ -68,6 +84,14 @@ table.UsersTable {
 }
 /* Настройка Иллюстраций */
 .floatArt {
-    float: left; /* Выравнивание по левому краю */
-    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+    float: left; 
+    margin: 7px 7px 7px 0; 
+}
+.Prev {
+    width: 200px;
+    height: 200px;
+}
+.Prev:hover {
+    width: 250px;
+
 }
