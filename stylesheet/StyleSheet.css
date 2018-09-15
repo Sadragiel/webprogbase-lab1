@@ -2,28 +2,30 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../images/New-Samurai-Wallpaper-.jpg); 
-    background-color: black; 
+    background-image: url(../images/background.jpeg);
+
+    background-color: black;
+    background-attachment: fixed;
+    Background-size: cover;
+    Background-position: center;
 }
 
 /* Настройка Блоков */
 div.header {
-    height: 100px;
-    display: inline block;
-    margin: 5px;
-    background-color: rgba(0, 120, 201, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
 }
+
 div.menu {
-    width: 200px;
+    width: 300px;
     float: left;
     margin: 5px;
-    background-color: rgba(0, 120, 201, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 div.content {
-    width: 970px;
+    width: 870px;
     float: right;
     margin: 5px;
-    background-color: rgba(0, 120, 201, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 5px;
     text-align: justify;
 }
@@ -31,10 +33,41 @@ div.content {
 div.mid {
     margin: 0 auto;
     width: 1200px;
+    color:white;
+    
 }
 
 /* Настройка ссылок меню */
+a {
+    font-size: 20pt;
+}
 a.Passive {
     pointer-events: none; 
     color: #888; 
+}
+a.Active {
+    
+    color: #ffd800;
+}
+a.Active:hover {
+    font-size: 25pt;
+}
+/* Настройка Текста */
+
+p.Title {
+    font-size: 55pt;
+    font-family: Sylfaen;
+    font-weight: bold;
+    
+}
+/* Настройка Таблицы */
+table.UsersTable {
+    width: 100%;
+    border-style: double;
+    border-width: medium;
+}
+/* Настройка Иллюстраций */
+.floatArt {
+    float: left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
 }
