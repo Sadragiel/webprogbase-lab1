@@ -1,0 +1,40 @@
+﻿/* Настройка фона */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/New-Samurai-Wallpaper-.jpg); 
+    background-color: black; 
+}
+
+/* Настройка Блоков */
+div.header {
+    height: 100px;
+    display: inline block;
+    margin: 5px;
+    background-color: rgba(0, 120, 201, 0.7);
+}
+div.menu {
+    width: 200px;
+    float: left;
+    margin: 5px;
+    background-color: rgba(0, 120, 201, 0.7);
+}
+div.content {
+    width: 970px;
+    float: right;
+    margin: 5px;
+    background-color: rgba(0, 120, 201, 0.7);
+    padding: 5px;
+    text-align: justify;
+}
+
+div.mid {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* Настройка ссылок меню */
+a.Passive {
+    pointer-events: none; 
+    color: #888; 
+}
